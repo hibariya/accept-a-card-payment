@@ -9,8 +9,10 @@ jobs:
 
       - uses: actions/checkout@v2
         with:
-          repository: 'stripe-samples/sample-ci'
+          repository: 'hibariya/legendary-octo-guacamole'
           path: 'sample-ci'
+          ref: 'jar'
+          token: ${{ secrets.PAT }}
 
       - name: Install gettext for envsubst
         run: |
