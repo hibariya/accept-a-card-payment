@@ -15,6 +15,9 @@ jobs:
           repository: 'stripe-samples/sample-ci'
           path: 'sample-ci'
 
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+
       - name: Install gettext for envsubst
         run: |
           sudo apt install gettext-base
