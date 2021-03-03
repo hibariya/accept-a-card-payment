@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - re-reproduce
 
 jobs:
   test:
